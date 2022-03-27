@@ -33,7 +33,7 @@ void decipher(string numbers, char arr[6][6])
     for (int p = 0, j = 1; p <(numbers.length()),j<(numbers.length()); p+=2,j+=2) {
         for (int i = 0; i < 6; i++) {
             for (int s = 0; s < 6; s++) {
-                if (numbers[p] == arr[i][0] && numbers[j] == arr[0][s]&& numbers[p]!= ' ') {
+                if (numbers[p] == arr[i][0] && numbers[j] == arr[0][s]) {
                     row2 = i;
                     column2 = s;
                     cout << arr[row2][column2];
