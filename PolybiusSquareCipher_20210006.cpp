@@ -30,6 +30,7 @@ void cipher(string letter, char arr[6][6] )
 void decipher(string numbers, char arr[6][6])
 {
     int row2, column2 ;
+    numbers.erase(remove(numbers.begin(), numbers.end(), ' '), numbers.end()) ;
     for (int p = 0, j = 1; p <(numbers.length()),j<(numbers.length()); p+=2,j+=2) {
         for (int i = 0; i < 6; i++) {
             for (int s = 0; s < 6; s++) {
